@@ -1,7 +1,9 @@
 import React from 'react';
 import { observer } from 'startupjs';
 import { ScrollView, View } from 'react-native';
-import { Header, MainSection } from 'components';
+import MainSection from 'components/MainSection';
+import StatsSection from 'components/StatsSection';
+import { Header } from 'components';
 import './index.styl';
 
 export default observer(function PHome() {
@@ -10,5 +12,6 @@ export default observer(function PHome() {
       Header
       View.content
         MainSection
+        StatsSection
   `;
 });

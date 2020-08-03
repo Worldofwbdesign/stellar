@@ -3,7 +3,7 @@ import { View } from 'react-native';
 
 import './index.styl';
 
-export default function ImageWrapper({ children }) {
+export default function Section({ children }) {
   return pug`
     View.root= children
   `;
