@@ -8,8 +8,8 @@ import {
   UnderlinedTitle,
   Button
 } from '../';
+import { faCode, faCopy, faGem } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 import './index.styl';
 
@@ -20,11 +20,37 @@ export default function StatsSection() {
         title="Magna veroeros"
         noMargin
       )
-      FontAwesomeIcon(icon="check-square")
-      ImageWrapper
-        FontAwesomeIcon(icon="check-square")
+
+      View.iconWrapp
+        ImageWrapper
+          FontAwesomeIcon(
+            icon=faCode
+            size=70
+            color="#efa8b0"
+          )
       Text.title Ipsum consequat
       SectionDescription(text="Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.")
+
+      View.iconWrapp
+        ImageWrapper
+          FontAwesomeIcon(
+            icon=faCopy
+            size=70
+            color="#a89cc8"
+          )
+      Text.title Amed sed feugiat
+      SectionDescription(text="Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.")
+
+      View.iconWrapp
+        ImageWrapper
+          FontAwesomeIcon(
+            icon=faGem
+            size=70
+            color="#8cc9f0"
+          )
+      Text.title Dolor nullam
+      SectionDescription(text="Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.")
+
       Button(text="Learn More")
   `;
 }

@@ -5,6 +5,7 @@ import './index.styl';
 
 export default function ImageWrapper({ children }) {
   return pug`
-    View.root= children
+    View.root
+      View.content= children
   `;
 }
