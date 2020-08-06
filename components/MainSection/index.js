@@ -1,6 +1,6 @@
 import React from 'react';
 import { BASE_URL } from '@env';
-import { Text, Image } from 'react-native';
+import { Image, View } from 'react-native';
 import {
   Section,
   ImageWrapper,
@@ -11,7 +11,7 @@ import {
 
 import './index.styl';
 
-export default function MainCards() {
+export default function MainSection() {
   const imgUrl = BASE_URL + '/img/phone.jpg';
 
   return pug`
@@ -20,6 +20,8 @@ export default function MainCards() {
         Image.image(source={uri: imgUrl})
       UnderlinedTitle(title="Ipsum sed adipiscing")
       SectionDescription(text="Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.")
-      Button(text="Learn More")
+
+      View.buttonWrapp
+        Button(text="Learn More")
   `;
 }

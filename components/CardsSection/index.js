@@ -4,6 +4,8 @@ import { Section, SectionDescription, UnderlinedTitle, Button } from '../';
 import {
   faCodeBranch,
   faFolderOpen,
+  faChartBar,
+  faLaptop,
   faGem
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
@@ -21,6 +23,24 @@ const cards = [
     counter: '8,192',
     title: 'Magna',
     backgroundColor: '#c79cc8'
+  },
+  {
+    icon: faChartBar,
+    counter: '2,048',
+    title: 'Tempus',
+    backgroundColor: '#a89cc8'
+  },
+  {
+    icon: faLaptop,
+    counter: '4,096',
+    title: 'Aliquam',
+    backgroundColor: '#9bb2e1'
+  },
+  {
+    icon: faGem,
+    counter: '1,024',
+    title: 'Nullam',
+    backgroundColor: '#8cc9f0'
   }
 ];
 
@@ -48,6 +68,7 @@ export default function CardsSection() {
 
       Text.description Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.
 
-      Button(text="Learn More")
+      View.buttonWrapp
+        Button(text="Learn More")
   `;
 }

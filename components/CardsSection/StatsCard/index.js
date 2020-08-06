@@ -11,7 +11,6 @@ export default function StatsCard({
   backgroundColor,
   variant
 }) {
-  console.info('variant', variant);
   return pug`
     View.root(
       style={ backgroundColor: backgroundColor || "#000000" }
