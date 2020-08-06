@@ -5,6 +5,7 @@ import MainSection from 'components/MainSection';
 import StatsSection from 'components/StatsSection';
 import CardsSection from 'components/CardsSection';
 import GetStartedSection from 'components/GetStartedSection';
+import Footer from 'components/Footer';
 import { Header } from 'components';
 import './index.styl';
 
@@ -17,5 +18,7 @@ export default observer(function PHome() {
         StatsSection
         CardsSection
         GetStartedSection
+      
+      Footer
   `;
 });

@@ -10,7 +10,7 @@ import {
 
 import './index.styl';
 
-export default function MainCards() {
+export default function GetStartedSection() {
   return pug`
     Section
       UnderlinedTitle(title="Congue imperdiet")
