@@ -1,8 +1,34 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import { Button } from '../';
+import ContactItem from './ContactItem';
+import SocialItem from './SocialItem';
+import {
+  faCodeBranch,
+  faFolderOpen,
+  faChartBar,
+  faLaptop,
+  faGem
+} from '@fortawesome/free-solid-svg-icons';
 
 import './index.styl';
+
+const contacts = [
+  {
+    key: 'Address',
+    text: '1234 Somewhere Road • Nashville, TN 00000 • USA'
+  },
+  {
+    key: 'Phone',
+    text: '(000) 000-0000 x 0000'
+  },
+  {
+    key: 'Email',
+    text: 'information@untitled.tld'
+  }
+];
+
+const socialIcons = [faCodeBranch, faFolderOpen, faChartBar, faLaptop, faGem];
 
 export default function Footer() {
   return pug`
@@ -14,8 +40,20 @@ export default function Footer() {
           text="Learn More"
           variant="transparent"
         )
-
+      
       View.contacts
-        
+        Text.title Etiam feugiat
+        each contact in contacts
+          ContactItem(
+            key=contact.key
+            contactKey=contact.key
+            text=contact.text
+          )
+      
+      View.social
+        each icon in socialIcons
+          SocialItem(icon=icon)
+
+      Text.copyright © Untitled. Design: HTML5 UP. Demo Images: Unsplash
   `;
 }
