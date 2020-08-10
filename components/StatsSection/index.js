@@ -18,7 +18,6 @@ export default function StatsSection() {
     Section
       UnderlinedTitle(
         title="Magna veroeros"
-        noMargin
       )
 
       View.iconWrapp
@@ -29,7 +28,8 @@ export default function StatsSection() {
             color="#efa8b0"
           )
       Text.title Ipsum consequat
-      SectionDescription(text="Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.")
+      View.sectionDescrWrapp
+        SectionDescription(text="Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.")
 
       View.iconWrapp
         ImageWrapper
@@ -39,7 +39,8 @@ export default function StatsSection() {
             color="#a89cc8"
           )
       Text.title Amed sed feugiat
-      SectionDescription(text="Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.")
+      View.sectionDescrWrapp
+        SectionDescription(text="Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.")
 
       View.iconWrapp
         ImageWrapper
@@ -49,7 +50,8 @@ export default function StatsSection() {
             color="#8cc9f0"
           )
       Text.title Dolor nullam
-      SectionDescription(text="Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.")
+      View.sectionDescrWrapp
+        SectionDescription(text="Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.")
 
       Button(text="Learn More")
   `;

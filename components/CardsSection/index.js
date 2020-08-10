@@ -51,9 +51,9 @@ export default function CardsSection() {
     Section
       UnderlinedTitle(
         title="Ipsum consequat"
-        noMargin
       )
-      SectionDescription(text="Donec imperdiet consequat consequat. Suspendisse feugiat congue posuere. Nulla massa urna, fermentum eget quam aliquet.")
+      View.sectionDescrWrapp
+        SectionDescription(text="Donec imperdiet consequat consequat. Suspendisse feugiat congue posuere. Nulla massa urna, fermentum eget quam aliquet.")
 
       View.cards
         each card, index in cards

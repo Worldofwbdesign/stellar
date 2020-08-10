@@ -18,8 +18,10 @@ export default function MainSection() {
     Section
       ImageWrapper
         Image.image(source={uri: imgUrl})
-      UnderlinedTitle(title="Ipsum sed adipiscing")
-      SectionDescription(text="Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.")
+      View.titleWrapp
+        UnderlinedTitle(title="Ipsum sed adipiscing")
+      View.sectionDescrWrapp
+        SectionDescription(text="Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.")
 
       View.buttonWrapp
         Button(text="Learn More")

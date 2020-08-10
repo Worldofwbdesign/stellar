@@ -12,9 +12,10 @@ import './index.styl';
 
 export default function GetStartedSection() {
   return pug`
-    Section
+    Section(noBorder)
       UnderlinedTitle(title="Congue imperdiet")
-      SectionDescription(text="Donec imperdiet consequat consequat. Suspendisse feugiat congue posuere. Nulla massa urna, fermentum eget quam aliquet.")
+      View.sectionDescrWrapp
+        SectionDescription(text="Donec imperdiet consequat consequat. Suspendisse feugiat congue posuere. Nulla massa urna, fermentum eget quam aliquet.")
 
       View.buttonWrapp
         Button(

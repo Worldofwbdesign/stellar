@@ -51,8 +51,12 @@ export default function Footer() {
           )
       
       View.social
-        each icon in socialIcons
-          SocialItem(icon=icon)
+        each icon, index in socialIcons
+          SocialItem(
+            key=index
+            variant=index === 0 && 'first'
+            icon=icon
+          )
 
       Text.copyright © Untitled. Design: HTML5 UP. Demo Images: Unsplash
   `;
