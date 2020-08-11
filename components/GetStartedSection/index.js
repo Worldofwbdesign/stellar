@@ -17,12 +17,13 @@ export default function GetStartedSection() {
       View.sectionDescrWrapp
         SectionDescription(text="Donec imperdiet consequat consequat. Suspendisse feugiat congue posuere. Nulla massa urna, fermentum eget quam aliquet.")
 
-      View.buttonWrapp
+      View.btns
         Button(
           variant="blue"
           text="Get Started"
           textColor="red"
         )
-        Button(text="Learn More")
+        View.buttonWrapp
+          Button(text="Learn More")
   `;
 }

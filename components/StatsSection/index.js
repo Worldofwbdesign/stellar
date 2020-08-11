@@ -53,6 +53,7 @@ export default function StatsSection() {
       View.sectionDescrWrapp
         SectionDescription(text="Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.")
 
-      Button(text="Learn More")
+      View.buttonWrapp
+        Button(text="Learn More")
   `;
 }
