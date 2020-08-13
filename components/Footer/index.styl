@@ -1,8 +1,11 @@
 .root
+  max-width: 1200px
   padding 6u 3u
   text-align left
   +tablet()
     padding 8u 6u
+  +wide()
+    margin 0 auto
 
 .sections
   +desktop()
@@ -20,6 +23,8 @@
   font-weight 300
   +tablet()
     font(xxl)
+  +wide()
+    font-size 30px
 
 .description
   color $white
@@ -27,17 +32,25 @@
   line-height 3u
   font-weight 300
   opacity .65
+  +wide()
+    font-size 16px
 
 .buttonWrapp
   margin-top 4u
   align-items center
   +tablet()
     align-items flex-start
+  +wide()
+    margin-top 8u
 
 .contacts
   margin-top 6u
   +desktop()
     margin-top 0
+
+.contactsList
+  +desktop()
+    margin-top 1u
 
 .social
   margin-top 6u

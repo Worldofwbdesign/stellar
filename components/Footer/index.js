@@ -33,7 +33,7 @@ const socialIcons = [faCodeBranch, faFolderOpen, faChartBar, faLaptop, faGem];
 export default function Footer() {
   return pug`
     View.root
-    
+
       View.sections
         View.section
           Text.title Aliquam sed mauris
@@ -47,12 +47,13 @@ export default function Footer() {
         View.section
           View.contacts
             Text.title Etiam feugiat
-            each contact in contacts
-              ContactItem(
-                key=contact.key
-                contactKey=contact.key
-                text=contact.text
-              )
+            View.contactsList
+              each contact in contacts
+                ContactItem(
+                  key=contact.key
+                  contactKey=contact.key
+                  text=contact.text
+                )
           
           View.social
             each icon, index in socialIcons
