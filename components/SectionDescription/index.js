@@ -3,8 +3,10 @@ import { Text } from 'react-native';
 
 import './index.styl';
 
-export default function SectionDescription({ text }) {
+export default function SectionDescription({ text, variant }) {
   return pug`
-    Text.root= text
+    Text.root(
+      styleName=[variant]
+    )= text
   `;
 }

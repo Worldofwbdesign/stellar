@@ -5,9 +5,18 @@
   &.-first
     border-top-left-radius: 1u
     border-top-right-radius: 1u
+    +tablet()
+      border-top-left-radius: 0
+      border-top-right-radius: 0
   &.-last
     border-bottom-left-radius: 1u
     border-bottom-right-radius: 1u
+    +tablet()
+      border-bottom-left-radius: 0
+      border-bottom-right-radius: 0
+  +tablet()
+    border-radius 0px
+    width 20%
 
 .counter
 .title
@@ -18,6 +27,8 @@
   font-size 46px
   font-weight 300
   margin 1u 0
+  +tablet()
+    font-size 18px
 
 .title
   font-size 18px

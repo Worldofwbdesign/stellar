@@ -1,11 +1,15 @@
 .root
   padding 6u 3u
   text-align left
+  +tablet()
+    padding 8u 6u
 
 .title
   font-size 20px
   color $white
   font-weight 300
+  +tablet()
+    font(xxl)
 
 .description
   color $white
@@ -17,6 +21,8 @@
 .buttonWrapp
   margin-top 4u
   align-items center
+  +tablet()
+    align-items flex-start
 
 .contacts
   margin-top 6u

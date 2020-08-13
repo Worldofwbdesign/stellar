@@ -15,14 +15,18 @@ export default function GetStartedSection() {
     Section(noBorder)
       UnderlinedTitle(title="Congue imperdiet")
       View.sectionDescrWrapp
-        SectionDescription(text="Donec imperdiet consequat consequat. Suspendisse feugiat congue posuere. Nulla massa urna, fermentum eget quam aliquet.")
+        SectionDescription(
+          text="Donec imperdiet consequat consequat. Suspendisse feugiat congue posuere. Nulla massa urna, fermentum eget quam aliquet."
+          variant="tabletL"
+        )
 
       View.btns
-        Button(
-          variant="blue"
-          text="Get Started"
-          textColor="red"
-        )
+        View.buttonWrapp
+          Button(
+            variant="blue"
+            text="Get Started"
+            textColor="red"
+          )
         View.buttonWrapp
           Button(text="Learn More")
   `;
