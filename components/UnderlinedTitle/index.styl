@@ -1,6 +1,10 @@
 .root
   align-items center
 
+  &.desktopAlignLeft
+    +desktop()
+      align-items flex-start
+
 .title
   font(xl)
   font-weight 300

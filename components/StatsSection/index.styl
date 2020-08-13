@@ -11,12 +11,16 @@
   justify-content center
   +tablet()
     flex-flow row wrap
+  +desktop()
+    justify-content space-between
 
   &__item
     align-items center
     +tablet()
       margin-top 4u
       width 50%
+    +desktop()
+      width 31%
 
 .sectionDescrWrapp
   margin-top 4u

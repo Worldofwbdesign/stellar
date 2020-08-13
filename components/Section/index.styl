@@ -1,5 +1,6 @@
 .root
   align-items center
+  width 100%
   padding 6u 3u
   color: $textColor
   border-bottom 1px solid #dddddd
@@ -8,3 +9,8 @@
   
   +tablet()
     padding 8u 6u
+
+  &.desktopRow
+    +desktop()
+      flex-direction row
+      justify-content space-between

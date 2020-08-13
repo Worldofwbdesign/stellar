@@ -3,10 +3,10 @@ import { View } from 'react-native';
 
 import './index.styl';
 
-export default function Section({ children, noBorder }) {
+export default function Section({ children, noBorder, desktopRow }) {
   return pug`
     View.root(
-      styleName=[noBorder && 'noBorder']
+      styleName=[noBorder && 'noBorder', desktopRow && 'desktopRow']
     )= children
   `;
 }

@@ -4,6 +4,16 @@
   +tablet()
     padding 8u 6u
 
+.sections
+  +desktop()
+    flex-direction row
+    justify-content space-between
+    align-items flex-start
+
+.section
+  +desktop()
+    width 48%
+
 .title
   font-size 20px
   color $white
@@ -26,6 +36,8 @@
 
 .contacts
   margin-top 6u
+  +desktop()
+    margin-top 0
 
 .social
   margin-top 6u
@@ -37,6 +49,8 @@
   color $white
   line-height 3u
   opacity .65
+  +desktop()
+    text-align center
 
 
   
