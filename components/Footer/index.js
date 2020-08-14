@@ -48,11 +48,12 @@ export default function Footer() {
           View.contacts
             Text.title Etiam feugiat
             View.contactsList
-              each contact in contacts
+              each contact, index in contacts
                 ContactItem(
                   key=contact.key
                   contactKey=contact.key
                   text=contact.text
+                  first=index === 0
                 )
           
           View.social
