@@ -1,11 +1,30 @@
 .root
+  max-width: 1200px
   padding 6u 3u
   text-align left
+  +tablet()
+    padding 8u 6u
+  +wide()
+    margin 0 auto
+
+.sections
+  +desktop()
+    flex-direction row
+    justify-content space-between
+    align-items flex-start
+
+.section
+  +desktop()
+    width 48%
 
 .title
   font-size 20px
   color $white
   font-weight 300
+  +tablet()
+    font(xxl)
+  +wide()
+    font-size 30px
 
 .description
   color $white
@@ -13,12 +32,28 @@
   line-height 3u
   font-weight 300
   opacity .65
+  +wide()
+    font-size 16px
 
 .buttonWrapp
+  width 100%
+  flex 1
+  flex-direction row
+  justify-content center
+  flex-basis auto
   margin-top 4u
+  +tablet()
+    justify-content flex-start
+  +wide()
+    margin-top 6u
 
 .contacts
   margin-top 6u
+  +desktop()
+    margin-top 0
+
+.contactsList
+  margin-top 3u
 
 .social
   margin-top 6u
@@ -30,6 +65,8 @@
   color $white
   line-height 3u
   opacity .65
+  +desktop()
+    text-align center
 
 
   

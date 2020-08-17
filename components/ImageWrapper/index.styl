@@ -3,7 +3,19 @@
   height 22u
   padding 0.5u
   border 1px solid $borderColor
-  border-radius: 100%
+  border-radius: 22u
+  +tablet()
+    width 32u
+    height 32u
+  +wide()
+    width 38u
+    height 38u
+  &.icon
+    width 18u
+    height 18u
+    +tablet()
+      width 24u
+      height 24u
 
 .content
   display flex
@@ -12,4 +24,4 @@
   width 100%
   height 100%
   border 1px solid $borderColor
-  border-radius: 100%
+  border-radius 22u

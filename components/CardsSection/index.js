@@ -53,7 +53,10 @@ export default function CardsSection() {
         title="Ipsum consequat"
       )
       View.sectionDescrWrapp
-        SectionDescription(text="Donec imperdiet consequat consequat. Suspendisse feugiat congue posuere. Nulla massa urna, fermentum eget quam aliquet.")
+        SectionDescription(
+          text="Donec imperdiet consequat consequat. Suspendisse feugiat congue posuere. Nulla massa urna, fermentum eget quam aliquet."
+          variant="tabletL"
+        )
 
       View.cards
         each card, index in cards

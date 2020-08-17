@@ -1,3 +1,16 @@
 .root
   line-height 3u
   color $textColor
+  text-align center
+  +wide()
+    font-size 18px
+    line-height 4u
+
+  &.tabletL
+    +tablet()
+      font-size 18px
+      line-height 4u
+
+  &.desktopAlignLeft
+    +desktop()
+      text-align left

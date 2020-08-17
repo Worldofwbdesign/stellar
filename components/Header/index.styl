@@ -3,12 +3,16 @@
   padding 6u 0
   +desktop()
     padding 10u 0
+  +wide()
+    padding 14u 0
 
 .h1
   font-size 40px
   font-weight 300
   color $white
   margin-top 2u
+  +tablet()
+    font-size 50px
 
 .image
   height 10u
@@ -18,6 +22,16 @@
   text-align center
   color $white
   line-height 3u
+  font-weight 300
   padding 0 4u
   margin-top 2u
   opacity .65
+  +tablet()
+    padding 0 20u
+    font-size 18px
+    line-height 4u
+  +wide()
+    width 90u
+    padding 0
+    font-size 18px
+    line-height 4u

@@ -3,10 +3,10 @@ import { View, Text } from 'react-native';
 
 import './index.styl';
 
-export default function UnderlinedTitle({ title, noMargin }) {
+export default function UnderlinedTitle({ title, desktopAlignLeft }) {
   return pug`
     View.root(
-      styleName=[{ '-noMargin': noMargin }]
+      styleName=[{ desktopAlignLeft }]
     )
       Text.title= title
       Text.stroke

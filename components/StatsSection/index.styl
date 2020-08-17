@@ -6,9 +6,34 @@
   font-size 18px 
   font-weight 300
 
+  +wide()
+    font-size 22px
+
+.list
+  align-items center
+  justify-content center
+  +tablet()
+    flex-flow row wrap
+  +desktop()
+    justify-content space-between
+
+  &__item
+    align-items center
+    +tablet()
+      margin-top 4u
+      width 50%
+    +desktop()
+      width 31%
+
 .sectionDescrWrapp
   margin-top 4u
 
 .buttonWrapp
   width 100%
+  flex 1
+  flex-direction row
+  justify-content center
+  flex-basis auto
   margin-top 4u
+  +wide()
+    margin-top 6u

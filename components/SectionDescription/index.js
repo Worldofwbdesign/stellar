@@ -3,8 +3,14 @@ import { Text } from 'react-native';
 
 import './index.styl';
 
-export default function SectionDescription({ text }) {
+export default function SectionDescription({
+  text,
+  desktopAlignLeft,
+  variant
+}) {
   return pug`
-    Text.root= text
+    Text.root(
+      styleName=[variant, { desktopAlignLeft }]
+    )= text
   `;
 }

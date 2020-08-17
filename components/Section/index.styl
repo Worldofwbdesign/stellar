@@ -1,7 +1,20 @@
 .root
   align-items center
+  width 100%
   padding 6u 3u
   color: $textColor
-  border-bottom 1px solid #dddddd
+  border-bottom-color #dddddd
+  border-bottom-width 1px
   &.noBorder
-    border-bottom none
+    border-bottom-width 0
+  
+  +tablet()
+    padding 8u 6u
+
+  +wide()
+    padding 12u 10u
+
+  &.desktopRow
+    +desktop()
+      flex-direction row
+      justify-content space-between

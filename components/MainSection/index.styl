@@ -1,14 +1,33 @@
 .image
   width 100%
   height 100%
-  border-radius: 100%
+  border-radius: 22u
 
 .buttonWrapp
   width 100%
+  flex 1
+  flex-direction row
+  justify-content center
+  flex-basis auto
   margin-top 4u
+  +desktop()
+    width 148px
+  +wide()
+    margin-top 6u
 
 .titleWrapp
   margin-top 4u
 
 .sectionDescrWrapp
   margin-top 4u
+
+.content
+  width 100%
+  align-items center
+  +desktop()
+    align-items flex-start
+    width 65%
+
+.imageWrapp
+  +desktop()
+    order 1
